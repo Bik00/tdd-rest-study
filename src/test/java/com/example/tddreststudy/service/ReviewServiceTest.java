@@ -1,6 +1,7 @@
 package com.example.tddreststudy.service;
 
 import com.example.tddreststudy.dao.Review;
+import com.example.tddreststudy.repository.ReviewRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class ReviewServiceTest {
 
+    @Autowired
+    ReviewRepository reviewRepository;
 
     @Autowired
     ReviewService reviewService;
